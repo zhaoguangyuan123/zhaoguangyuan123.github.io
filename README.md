@@ -8,7 +8,9 @@ zhaoguangyuan's [personal website](zhaoguangyuan123.github.io).
 - [The complete Font Awesome 4.7.0 icon reference](https://fontawesome.com/v4/cheatsheet/)
 - [Number Symbols](https://www.htmlsymbols.xyz/number-symbols)
 - [Specific usage of span](https://www.runoob.com/try/try.php?filename=tryhtml_span)
-  
+- [HTML Links - Different Colors](https://www.w3schools.com/html/html_links_colors.asp)
+
+
 #### Reference: 
 > During time of making my own website, I also follow the following scientists and borrow elements from their excellent websites. 
 

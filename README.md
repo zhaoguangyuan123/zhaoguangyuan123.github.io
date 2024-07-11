@@ -1,13 +1,6 @@
 # zhaoguangyuan123.github.io
-<!-- zhaoguangyuan's personal website -->
+zhaoguangyuan's personal website
 
-
-<<<<<<< HEAD
-<!-- Mofified from Vincent Stizman's website -->
-
-
-<!-- ![Visitor Count](https : //profile-counter.glitch.me/{YOUR USER}/count.svg) -->
-=======
 ## Materials I find useful:
 - [HTML cheat sheet](https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf)
 - [grid system](https://getbootstrap.com/docs/4.1/layout/grid/)
@@ -22,4 +15,3 @@
 - [Vincent Sitzmann](https://www.vincentsitzmann.com/)
 - [Hyung Ju Terry Suh](http://hjrobotics.net/)
 - [Yiyue Luo](https://yyueluo.com/)
->>>>>>> dd1f612 (update at 2024)

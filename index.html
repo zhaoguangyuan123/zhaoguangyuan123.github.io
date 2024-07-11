@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <!-- Custom styles for this template -->
+    <link href="files/jumbotron.css" rel="stylesheet">
+
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
     <title>Guangyuan Zhao</title>
 
     <!-- Meta tags -->
@@ -10,20 +16,41 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- <link rel="icon" href="./static/images/shail_logo.jpeg"> -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+        
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/shail_logo.jpeg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Custom Styles -->
     <style>
           body {
             font-family: 'sans-serif';
             font-size: 16px;
             background-color: #FFFFFF;
-            color: #4F6071;
+            /* color: #4F6071; */
+            color: #383d42;
           }
           #header {
             background-color: #f4f4f4;
             /*background-color: #FFFFFF;*/
             display: flex;
             align-items: flex-end;
-            padding-top:60px;
+            padding-top:40px;
             padding-bottom:60px;
           }
           #footer {
@@ -42,7 +69,7 @@
           }
           #header-text-email {
             font-size: 20px;
-            font-style: italic;
+            /* font-style: italic; */
           }
           .header-text-desc {
             font-size: 20px;
@@ -63,8 +90,35 @@
             font-weight: bold;
           }
           .paper-authors {
-            font-style: italic;
+            /* font-style: italic; */
+            font-size: 14px;
           }
+          .paper-desc {
+            font-size: 16px;
+            font-style: oblique;
+          }
+
+          .expandable-section .content {
+                display: none;
+                padding: 10px;
+                border: 1px solid #ccc;
+                margin-top: 5px;
+            }
+
+          .material-icons {
+              vertical-align: -6px;
+          }
+
+          /* .toggle-button {
+              background-color: #f4f4f4;
+              border: 1px solid #ccc;
+              padding: 5px;
+              cursor: pointer;
+          } */
+          .toggle-button {
+              cursor: pointer;
+          }
+
     </style>
 </head>
 
@@ -73,7 +127,9 @@
         <div class='container'>
             <div class='row'>
                 <div class="col-sm-3 offset-sm-1">
-                    <img src='imgs/portrait.jpeg' class='img-fluid' id='portrait'>
+                    <img src='imgs/portrait_2019.png' class='img-fluid' id='portrait' style="max-width: 70%; max-height: 100;">
+                    <!-- <img src="./image/UIST2023.jpg" alt="UIST2023" style="max-width: 100%; max-height: 200;"> -->
+
                 </div>
 
                 <div class="col">
@@ -81,15 +137,53 @@
                       Guangyuan Zhao
                     </div>
                   <div id='header-text-email'>
-                    zhaoguangyuan (at) ucla (dot) edu
+                    <!-- zhaoguangyuan (at) ucla (dot) edu -->
+                    zhaoguangyuan2021(at)gmail(dot)com
                   </div>
                   <div>
-                    <a href="https://github.com/zhaoguangyuan123">[GitHub]</a>
-                    <a href="https://scholar.google.com/citations?user=CJbW5EAAAAAJ&hl=en">[Google Scholar]</a>
-                    <a href="https://twitter.com/guangyuan_zhao">[Twitter]</a>
-                    <a href="docs/CV_GuangyuanZhao.pdf">[Download CV]</a>
-<!-- 		    <a href="https://docs.google.com/document/d/1IVWKTfViBxvpbqA_SjlxwQ84qcG3lnsFr7ArEkXzzdE/edit?usp=sharing">[Collaboration Opportunities]</a> -->
+                    <a href="https://github.com/zhaoguangyuan123">|
+                       <!-- GitHub -->
+                      <span class="icon">
+                      <i class="fab fa-github" style='font-size:20px'></i>
+                  </span>
+                       </a>
+                    <a href="https://scholar.google.com/citations?user=--TvYkEAAAAJ&hl=en">| 
+                      <i class="fab  fa-google" style='font-size:20px'></i>
+                      <!-- Google Scholar  -->|
+                    </a>
+                    <a href="https://twitter.com/guangyuan_zhao">
+                      <i class="fab fa-twitter" style='font-size:20px'></i>|
+                    </a>
+                    <a href="https://www.linkedin.com/in/guangyuan-zhao-a444b0119/">
+                      <!-- [Linkedin] -->
+                      <span class="icon">
+                      <i class="fab fa-linkedin" style='font-size:20px'></i> |
+                  </span>
+
                   </div>
+                    </a>
+                    <!-- <a href="docs/CV_GuangyuanZhao.pdf">[Download CV]</a> -->
+                    <a href="https://openreview.net/profile?id=~Guangyuan_Zhao1">
+                  <!-- <span class="icon">
+                      <i class="fab fa-github" style='font-size:24px'></i>
+                  </span> -->
+                  | Open Review </a>
+                    <!-- | Download CV| </a> -->
+
+                    <!-- <a href="docs/CV_GuangyuanZhao.pdf">[Download CV]</a> -->
+                    <!-- <a href="https://openreview.net/profile?id=~Guangyuan_Zhao1"> -->
+                  <!-- <span class="icon">
+                      <i class="fab fa-github" style='font-size:24px'></i>
+                  </span> -->
+                 <a href="https://docs.google.com/document/d/1Lq-C1JCXexD0Ri2KYhScYZwMABS8ci3DX2Dsmx0Ekxg/edit"> | My Peer Review Policy </a> 
+                    <!-- | Download CV| </a> -->
+                  <a href="https://docs.google.com/document/d/1rMCKbsjxoMI_QBwuE5PW5_Q48maHmM3fgQDyoE7gqC4/edit?usp=sharing">| Collaborating with Me | </a>
+                  Blogs I Write |
+
+                  <div>
+                </div>
+
+
                 </div>
             </div>
         </div>
@@ -99,41 +193,227 @@
     <div class='container'>
         <div class='row vspace-top'>
             <div class='col offset-sm-1'>
-                <h1>Bio</h1>
+                <h3>Bio</h3>
                 <p>
-                I am a second-year Ph.D. student in the <a href="https://visual.ee.ucla.edu/">UCLA Visual Machine Group</a>, advised by Prof. Achuta Kadambi. My research interest lies in <a href="http://zhaoguangyuan123.github.io/Physics&Learning/">bridging physics
-			world with deep neural network</a>, where we either use the deep neural network to help discover the hidden physical laws of the nature or utilize the known physics prior to boost the modelling capacity of deep neural network. My goal is to allow us to better sense and understand about the physical process in our world given visual observations. For now, the main targeted application scenario is computational imaging. Prior to UCLA, I worked on computational super-resolution microscopy in Zhejiang university, where I receive the master degree in year 2018. 
-                </p>
+                <!-- I am a second-year Ph.D. student in the <a href="https://visual.ee.ucla.edu/">UCLA Visual Machine Group</a>, advised by Prof. Achuta Kadambi. My research interest lies in <a href="http://zhaoguangyuan123.github.io/Physics&Learning/">bridging physics
+			world with deep neural network</a>, where we either use the deep neural network to help discover the hidden physical laws of the nature or utilize the known physics prior to boost the modelling capacity of deep neural network. My goal is to allow us to better sense and understand about the physical process in our world given visual observations. For now, the main targeted application scenario is computational imaging. Prior to UCLA, I worked on computational super-resolution microscopy in Zhejiang university, where I receive the master degree in year 2018.  -->
 
-                <div class='vspace-top'>
-                    <h1>News</h1>
-                </div>
+                <p> I am Guangyuan Zhao (赵光远), currently a researcher and a Ph.D. student in CUHK (Hongkong SAR, UTC+08). 
+              </p><strong>Research Interest:</strong> My research interest, if I have the freedom to choose, lies at the intersection of perception, robotics, and learning. My aim is to create agents that can interactively and informatively sense the world, and learn from the sensed data to better digitize real-world systems and make reliable decisions. In simpler terms, I am interested in robotics, machine learning, and computational imaging and optics.
+
+              <p> </p>                              
+              I currently work with Prof. Renjie Zhou. Previously, Previously, I was part of the <a href="https://visual.ee.ucla.edu/">UCLA Visual Machine Group</a>, working with Prof. Achuta Kadambi.</p>
+
+
+    <!-- <div class="container-fluid " style="width: 80%; margin-top: 50px;"> -->
+    <div class='container'>
+        <div class='row vspace-top'>
+            <!-- <div class='col offset-sm-1'> -->
+
+        <!-- <h2 style="margin-top: 30px;">Research Overview</h2> -->
+                <!-- <h3>Research Picture</h3>
+
+                  It is hard to have an accurate picture of my research for now as I am still on the way of drawing dots that can be connected. But I am trying to make it clear.
+
+                  I am particularly interested in the following topics:
+
+                - Computational imaging.
+                - World Models.
+                - Robotics and perception.
+              
+              <br>
+              <strong>Research Description:</strong>
+              
+              - How the information flow is directed physically, and how to overcome the bottleneck physically?
+
+              - How to learn the world model from the data?
+
+              - How the information flow is directed, computationally?
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="./imgs/whyNAS.png" alt="research overview" style="max-width: 70%; max-height: 250px;">
+            </div>
+        </div> -->
+
+    </div>
+
+
+    <div class='vspace-top'>
+        <h2>News</h2>
+    </div>
 		    
+
+		<div class='row vspace-top-news'>
+                    <div class="col-sm-2 news-date">
+                        June 2024
+                    </div>
+                    <div class="col">
+                        I will attend <strong>IISB Lithography Simulation Workshop 2024</strong>  and give a invited talk titled "<strong>Neural Litho: Real2Sim redefine the pipeline of computational lithography</strong>                              <a href="https://drive.google.com/file/d/18Fmi7pPrtSLvXr7z-334yxrpOp_fsoLr/view">[slides]</a>.
+                      </div>
+                </div>
+
+
+		<div class='row vspace-top-news'>
+                    <div class="col-sm-2 news-date">
+                        Dec. 2023
+                    </div>
+                    <div class="col">
+                        I will attend SIGGRAPH Asia 2023 to present our work Neural Litho.
+                      </div>
+                </div>
+
 		    
 		<div class='row vspace-top-news'>
                     <div class="col-sm-2 news-date">
                         June 2020
                     </div>
                     <div class="col">
-		    	I will join Apple AI research team over the summer as an intern and work on "physics and learning" with Nitish Srivastava.
+                    I will join Apple AI research team over the summer as an intern and work on "World Models for dextrous manipulation" with Nitish Srivastava. 
                     </div>
                 </div>
 		    
 		<div class='row vspace-top-news'>
                     <div class="col-sm-2 news-date">
-                        February 2020
+                        Feb. 2020
                     </div>
                     <div class="col">
-		    	My new personal website is established! Please stay tuned to my research.
+                      My new personal website is established! Please stay tuned to my research.
                     </div>
                 </div>
 
 
-                <div class='vspace-top'>
-                    <h1>Publications</h1>
-			(* indicates equal contributionship)
+    <div class='vspace-top'>
+      <h1>Research</h1>
+			(<sup>†</sup>indicates equal contributionship;
+       <sup>✉</sup> indicates corresponding authorship.)
+      </div>
+
+
+        <div class='row vspace-top'>
+            <div class="col-sm-4">
+                <img src='imgs/MFO_workflow.png' class='img-fluid'>
+                <!-- <embed src="imgs/MFO_workflow.pdf"  > -->
+                  <!-- <iframe src="https://docs.google.com/gview?url=http://example.com/mypdf.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe> -->
+            </div>
+
+            <div class="col">
+
+                <div class='paper-title'>
+                    Model-free Computational Optics
                 </div>
-			
+                <!-- <div class='paper-desc  '> -->
+
+      <!-- <div> 
+			<font size=2><b>TL,DR:</b> An one-for-all method being the the top performer of blending physical prior with neural network on a wide range of physical and data conditions. </font> 
+			</div> -->
+
+          <ul>
+          <li style="font-size: 14px;">
+            <u>Guangyuan Zhao</u><sup>†,✉</sup>, Xin Shu<sup>†</sup>, Renjie Zhou,           
+            <br />
+            <span style="font-size: 14px; font-weight: bold;">
+              High-performance real-world optical computing trained by in situ model-free optimization</span><br />  
+            <div class='paper-desc' style="font-size: inherit;">
+            arXiv 2023 (cond accepted to ICCP&TPAMI 2024), [<a href="https://arxiv.org/abs/2307.11957" target="_blank" rel="noopener">ArXiv</a>]
+            </div>
+
+
+
+            <!-- [<a href="https://slideslive.com/38983086/do-differentiable-simulators-give-better-policy-gradients-" target="_blank" rel="noopener">talk</a>]
+            [<a href="https://github.com/hjsuh94/alpha_gradient/tree/main" target="_blank" rel="noopener">code</a>] -->
+
+            <!-- <b><span style="color: #ff0000;">ICML Outstanding Paper Award</span></b><br /> -->
+            <!-- <b style="font-family: inherit; font-style: inherit; letter-spacing: 0px;"><span style="color: #ff0000;">IEEE RAS TC on Model-based Optimization for Robotics 2022 Best Paper Award of the Year</span></b> -->
+          </li>
+          
+          <li style="font-size: 14px;">
+            Guangyuan Zhao<sup>✉</sup>; Renjie Zhou,
+            <span style="font-size: 14px; font-weight: bold;"><br />Model-free computer-generated holography</span> 
+            <br />
+            <div class='paper-desc' style="font-size: inherit;">
+            TENCON 2022, [<a href="https://ieeexplore.ieee.org/document/9978096" target="_blank" rel="noopener">Paper</a>]
+            </div>
+          </li>
+            </ul>
+
+        <!-- </div> -->
+                </div>
+
+        <div class='row vspace-top'>
+          <div class="col-sm-4">
+            <img src='imgs/real2sim.png' class='img-fluid'>
+          </div>
+
+
+            <div class="col">
+              <div class='paper-title'>
+                Neural Lithography
+              </div>
+
+            <ul>
+              <li style="font-size: 14px;">
+              <div class='paper-authors'  style="font-size: inherit;">
+                Cheng Zheng<sup>†,✉</sup>, <u>Guangyuan Zhao</u><sup>†,✉</sup>, Peter T. C. So
+              </div>
+
+              <div class='paper-title' style="font-size: inherit;">
+                Neural Lithography: Close the Design to Manufacturing Gap in Computational Optics with a 'Real2Sim' Learned Photolithography Simulator
+              </div>
+              <div class='paper-desc' style="font-size: inherit;">
+                SIGGRAPH Asia 2023                 <a href="https://arxiv.org/abs/2309.17343">[arXiv ]</a>
+                <a href="https://neural-litho.github.io/">[Project page]</a>
+                <a href="https://github.com/Neural-Litho/Neural_Lithography">[Code]</a>
+                <a href="https://news.mit.edu/2023/closing-design-manufacturing-gap-optical-devices-1213">[MIT News]</a>
+                <!-- 			    NeurIPS 2019 (Oral, <b>Honorable Mention "Outstanding New Directions"</b>) -->
+              </div>
+
+              <div>
+                <font size=2> <strong>TL; DR: </strong> &#9312 A real2sim pipeline to quantitatively construct a high-fidelity neural photolithography
+                  simulator + &#9313 a design-fabrication co-optimization framework to bridge the design-to-manufacturing gap
+                  in computational optics.
+                </font>
+              </div>
+            </div>
+          </div>
+
+
+
+        <div class='row vspace-top'>
+          <div class="col-sm-4">
+              <img src='imgs/robot_manipulation.gif' class='img-fluid'>
+          </div>
+
+          <div class="col">
+            <div class='paper-title' >
+              Diffusion world models for Dextrous Manipulation
+            </div>
+
+            <ul>
+              <li  style="font-size: 14px;">
+              <div class='paper-authors' style="font-size: inherit;">
+                <u>Guangyuan zhao</u>, Nitish Srivastava, Walter Talbott, Shuangfei Zhai, Miguel Angel Bautista Martin, Josh Susskind
+            </div>
+            <div class='paper-desc' style="font-size: inherit;">
+              Apple AI/ML intern 2020
+              <!-- 			    NeurIPS 2019 (Oral, <b>Honorable Mention "Outstanding New Directions"</b>) -->
+            </div>
+
+            <!-- <div>
+              <a href="https://arxiv.org/abs/2309.17343">[arXiv ]</a>
+              <a href="https://neural-litho.github.io/">[Project page]</a>
+              <a href="https://github.com/Neural-Litho/Neural_Lithography">[Code]</a>
+              <a href="https://news.mit.edu/2023/closing-design-manufacturing-gap-optical-devices-1213">[MIT News]</a>
+            </div> -->
+            <div>
+              <font size=2> <b>TL;DR:</b> Offline learning the trajectory planning of dextrous manipulation in states space using the diffusion model.
+              </font>
+            </div>
+          </div>
+        </div>
+
+
+
                 <div class='row vspace-top'>
                     <div class="col-sm-4">
                         <img src='imgs/PhysicsNAS.png' class='img-fluid'>
@@ -143,27 +423,35 @@
                         <div class='paper-title'>
                             Blending Diverse Physical Priors with Neural Networks
                         </div>
-                        <div class='paper-desc'>
-				2019
-<!-- 			    NeurIPS 2019 (Oral, <b>Honorable Mention "Outstanding New Directions"</b>) -->
+                        <ul>
+                      <li style="font-size: 14px;">
+                        <!-- <div class='paper-title'>
+                            Blending Diverse Physical Priors with Neural Networks
+                        </div> -->
+
+                          <div class='paper-authors' style="font-size: inherit;">
+                            Yunhao Ba<sup>†</sup>, <u>Guangyuan Zhao</u><sup>†</sup>, Achuta Kadambi
                         </div>
-                        <div class='paper-authors'>
-                            Yunhao Ba*, <u>Guangyuan Zhao</u>*, Achuta Kadambi
-                        </div>
-                        <div>
-                            <a href="https://visual.ee.ucla.edu/blendingphysics.htm">[Project page]</a>
+                        <div class='paper-desc' style="font-size: inherit;" >
+				                ArXiv 2019                             <a href="https://visual.ee.ucla.edu/blendingphysics.htm">[Project page]</a>
                             <a href="https://arxiv.org/abs/1910.00201">[Preprint]</a>
 			    <a href="https://github.com/PhysicsNAS/PhysicsNAS">[Code with datasets]</a>
+<!-- 			    NeurIPS 2019 (Oral, <b>Honorable Mention "Outstanding New Directions"</b>) -->
                         </div>
 			 <div> 
-			<font size=2><b>TL,DR:</b> An one-for-all method being the the top performer of blending physical prior with neural network on a wide range of physical and data conditions. </font> 
+			<font size=2><b>TL;DR:</b> An one-for-all method being the the top performer of blending physical prior with neural network on a wide range of physical and data conditions. </font> 
 			</div>
-                    </div>
+        </div>
                 </div>
 
+
+
+  
+
 		<div class='vspace-top'>
-                    <h4>Before UCLA:</h4>
-                         <a href="https://docs.google.com/document/d/1XqbFcby2r763d-Llvr9TLWuDmjBYd4TEhgvo-kr9LeM/edit?usp=sharing">[Summary of what I did in my master stage]</a>
+                    <h4>Previous on computational microscopy:</h4>
+                         <!-- <a href="https://docs.google.com/document/d/1XqbFcby2r763d-Llvr9TLWuDmjBYd4TEhgvo-kr9LeM/edit?usp=sharing">[Summary of what I did in my master stage]</a> -->
+                         [Summary of what I did in my master stage]
 
                 </div>
 		    
@@ -176,17 +464,34 @@
                       <div class='paper-title'>
                           Nonlinear Focal Modulation Microscopy
                       </div>
-                      <div class='paper-desc'>
-		      <b>Physical Review letters 2018</b> (On the cover)
+
+
+                      <ul>
+                      <li style="font-size: 14px;">
+                          <div class='paper-authors' style="font-size: inherit;">
+                            <u>Guangyuan Zhao</u><sup>†</sup>, Cheng Zheng<sup>†</sup>, Cuifang Kuang, et al.
+                        </div>
+                      <div class='paper-title' style="font-size: inherit;">
+                          Nonlinear Focal Modulation Microscopy
                       </div>
-                      <div class='paper-authors'>
-                      <u>Guangyuang Zhao</u>*, Cheng Zheng*, Cuifang Kuang, et al
+
+                      <div class='paper-desc' style="font-size: inherit;">
+		                    Physical Review letters 2018 (On the cover)           <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.193901">[Paper]</a>                  
+                         <!-- <a href="http://zhaoguangyuan123.github.io/NFOMM/">[Project]</a> -->
+   
+                         <!-- <a href="https://github.com/xxx/xxx">[Code]</a> -->
+                         <!-- <a href="https://drive.google.com/file/d/1CYVW2ovi1TZRQtRzmdmP7WJf8EQUhXkb/view">[Reviewers' comments]</a> -->
                       </div>
-                      <div>
-                         <a href="http://zhaoguangyuan123.github.io/NFOMM/">[Project page]</a>
-                         <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.193901">[Paper]</a>
-                         <a href="https://github.com/xxx/xxx">[Code]</a>
-                         <a href="https://drive.google.com/file/d/1CYVW2ovi1TZRQtRzmdmP7WJf8EQUhXkb/view">[Reviewers' comments]</a>
+
+                      <div> 
+                        <font size=2><b>TL;DR:</b> The PSF engineering, in combination with non-linear light-matter interaction, can achieve eqaulivent supre-resolving capacity as STED (the one won the 2014 Nobel prize) while requiring much simpler setup and imposing less constraint on the object to image with.</font> 
+                        </div>
+                      </li>
+
+                      <li style="font-size: 14px;">
+
+                      <div class='paper-authors' style="font-size: inherit;">
+                      <u>Guangyuang Zhao</u>,  et al.
                       </div>
 			<div> 
 			<font size=2><b>Takeaway:</b> The PSF engineering, in combination with non-linear light-matter interaction and computational recsonstruction, can achieve eqaulivent supre-resolving capacity as STED (the one won the 2014 Nobel prize) while requiring much simpler setup and imposing less constraint on the object to image with.</font> 
@@ -198,28 +503,33 @@
                 <div class='row vspace-top'>
                     <div class="col-sm-4">
                         <img src='imgs/P_TIRF.png' class='img-fluid'>
+                        <!-- <img src='imgs/Pol_TIRF.gif' class='img-fluid'> -->
+                          <!-- <IMG SRC="Pol_TIRF.gif"> -->
                     </div>
-
+                    
                     <div class="col">
                       <div class='paper-title'>
                         3D super-resolved multi-angle TIRF via polarization modulation
                       </div>
-                      <div class='paper-desc'>
-                        <b>Optics Letters</b> 2018
-                      </div>
-                      <div class='paper-authors'>
+
+                      <ul>
+                      <li style="font-size: 14px;">
+
+                      <div class='paper-authors' style="font-size: inherit;">
                       Cheng Zheng, <u>Guangyuan Zhao</u> et al.
                       </div>
-                      <div>
-			<a href="http://zhaoguangyuan123.github.io/Pol-TIRF/">[Project page]</a>
+
+                      <div class='paper-desc' style="font-size: inherit;">
+                        <b>Optics Letters</b> 2018 			<a href="http://zhaoguangyuan123.github.io/Pol-TIRF/">[Project page]</a>
                         <a href="https://www.osapublishing.org/ol/abstract.cfm?uri=ol-43-7-1423">[Paper]</a>
 			<a href="https://github.com/zcshinee/Pol-TIRF">[Code]</a>
 			<a href="https://drive.google.com/file/d/1nchpdxzIxDw5OX-rdb7TsBwnD-RBWYXx/view?usp=sharing">[Slides]</a>
-
                       </div>
 			<div> 
-			<font size=2><b>Takeaway:</b> Polarization is a lightweight add-on cue to boost the resolution of any super-resolution imaging techniques.</font>  
+			<font size=2><b>TL;DR:</b> Polarization is a lightweight add-on cue to boost the resolution of any super-resolution imaging techniques.</font>  
 			</div>
+
+      <ul>
                     </div>
                 </div>
 
@@ -232,32 +542,37 @@
                       <div class='paper-title'>
                         Resolution enhanced SOFI via structured illumination
                       </div>
-                      <div class='paper-desc'>
-                          <b>Optics Letters</b> 2017
-                      </div> 
-                      <div class='paper-authors'>
+
+                      <ul>
+                      <li style="font-size: 14px;">
+                      <div class='paper-authors' style="font-size: inherit;">
                           <u>Guangyuan Zhao</u>, Cheng Zheng, Xu Liu, Cuifang Kuang
                       </div>  
-                      <div>
-			 <a href="http://zhaoguangyuan123.github.io/Si-SOFI/">[Project page]</a>
+
+                      <div class='paper-desc' style="font-size: inherit;">
+                          <b>Optics Letters</b> 2017 			 
+                          <a href="http://zhaoguangyuan123.github.io/Si-SOFI/">[Project page]</a>
                          <a href="https://www.osapublishing.org/ol/abstract.cfm?uri=ol-42-19-3956#Abstract">[Paper]</a>
 		         <a href="https://github.com/zhaoguangyuan123/SI-SOFI">[Code]</a>
                          <a href="https://docs.google.com/document/d/1XN3kaMzeuoVbQQZ_3gzaOTxqVapGV7ZBeWnIu_Z3pZc/edit">[Reviewers' Comments]</a>
-                      </div>    
-		      <div> 
-			<font size=2><b>Takeaway:</b> The combination of <u>strucutrued illumination</u> and <u>stochastic process of fluorescence emission</u> could further push the resolution boundary of super-resolution imaging.</font>  
-		      </div>
-			    
+                      </div> 
+ 
+                    <div> 
+                        <font size=2><b>TL;DR:</b> The combination of <u>strucutrued illumination</u> and <u>stochastic process of fluorescence emission</u> could further push the resolution boundary of super-resolution imaging.</font>  
+                    </div>
+                    
+                    </li>
+                    </ul>
                     </div>
                 </div>
 		    
-		<div style="display: block;">
+		<!-- <div style="display: block;">
 			<p align="right">
 				</br></br><br>
-			    Acknowledgement:Thanks to <a href="https://vsitzmann.github.io/">Vincent Sitzmann
+			    Acknowledgement: Thanks to <a href="https://vsitzmann.github.io/">Vincent Sitzmann
 			</a> for his website template. 
 			</p>
-		    <div style="clear: both;"></div>
+		    <div style="clear: both;"></div> -->
 		</div>
 		    
             </div>
@@ -266,12 +581,60 @@
 
 
     <div id='footer' class='vspace-top'>
-    <div>
+    </div>
+
+
+  </body>
+  </html>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed 
     <script src="js/bootstrap.min.js"></script>
-</body>
 
-</html>
+
+
+
+                <div class="expandable-section">
+                <button class="toggle-button">Review Policy: I am happy to be the reviewer for journals and conferences, with following preferences</button>
+                
+                
+                <div class="content">
+                    <div>
+                        <center>
+                            <!-- <figure style="width: 100%;">
+                                <a>
+                                    <img width="80%" src="asserts/HOE_results.png">
+                                </a>
+                                <p class="caption" style="margin-bottom: 24px;"><br>
+                                    We show improvement in performance when design the holographic optical elements(HOE)
+                                    w/ our learned litho model.
+                                </p>
+                            </figure> -->
+                          <!-- - knowledge advacement over quatity of the work.
+                          - the work is well-organized and well-presented.
+                          - the work is well-motivated and well-justified.
+                          - the work is well-validated and well-evaluated.
+                          - the work is well-communicated and well-discussed.
+
+                          
+                          I want to see the paper that have surprise. I view novelty first. Yes I will punish offers low score to the paper that is too obvious to me.
+                        </center>
+                    </div>
+                    <div>
+
+                        <center>
+                            <figure style="width: 100%;">
+                                <a>
+                                    <img width="80%" src="asserts/D2_HOE_quantative.png">
+                                </a>
+                                <p class="caption" style="margin-bottom: 24px;"><br>
+                                    We <b>quantitatively</b> show improvement in performance when design the holographic
+                                    optical elements(HOE) w/ our learned litho model.
+                                </p>
+                            </figure>
+                        </center>
+                    </div>
+
+                </div>
+            </div> -->

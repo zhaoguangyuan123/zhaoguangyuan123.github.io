@@ -11,8 +11,8 @@ zhaoguangyuan's [personal website](zhaoguangyuan123.github.io).
 - [HTML Links - Different Colors](https://www.w3schools.com/html/html_links_colors.asp)
 
 
-#### Reference: 
-> During time of making my own website, I also follow the following scientists and borrow elements from their excellent websites. 
+#### Credits: 
+> During time of making my own website, I also follow the following scientists and refer to elements from their excellent websites. 
 
 - [Vincent Sitzmann](https://www.vincentsitzmann.com/)
 - [Hyung Ju Terry Suh](http://hjrobotics.net/)

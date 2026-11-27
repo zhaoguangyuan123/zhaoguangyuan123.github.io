@@ -46,12 +46,19 @@
             color: #383d42;
           }
           #header {
-            background-color: #f4f4f4;
-            /*background-color: #FFFFFF;*/
+            /* background-image: url('imgs/teaser.png'); */
+            /* background-size: contain; */
+            /* background-position: center right; */
+            /* background-repeat: no-repeat; */
+            background-color: rgba(244, 244, 244, 0.9);
+            /* background-blend-mode: overlay; */
             display: flex;
             align-items: flex-end;
             padding-top:40px;
             padding-bottom:60px;
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
           }
           #footer {
             background-color: #FFFFFF;
@@ -148,8 +155,8 @@
 
           .journal-name {
             font-size: 14px;
-            color: #5e5e70;  /* dark red color */
-            font-weight: normal;
+            color: #4169E1;  /* Changed to Royal Blue - a cooler, more frigid tone */
+            font-weight: bold;
           }
 
     </style>
@@ -200,7 +207,10 @@
                  <a href="https://docs.google.com/document/d/1Lq-C1JCXexD0Ri2KYhScYZwMABS8ci3DX2Dsmx0Ekxg/edit?usp=sharing"> | My Peer Review Policy </a> 
                     <!-- | Download CV| </a> -->
                   <a href="https://docs.google.com/document/d/1rMCKbsjxoMI_QBwuE5PW5_Q48maHmM3fgQDyoE7gqC4/edit?usp=sharing">| Collaborating with Me | </a>
-                  <a href="blogs/Blogs_Guangyuan_Write.md"> Blogs I Write |</a>
+                  <span class="text-nowrap">
+                    <a href="blogs/Blogs_Guangyuan_Write.md">Blogs I Write</a> |
+                    <a href="workspace.html">Workspace (Internal)</a>
+                  </span>
 
                   <div>
                 </div>
@@ -219,7 +229,7 @@
               </p>
               
               <div class="highlight-bg">
-                <strong>Research Interest:</strong> My research interest, if I have the freedom to choose, lies at the intersection of perception 📷, robotics 🤖, and learning 🧠. My aim is to create agents that can interactively and informatively sense the world, and learn from the sensed data to better digitalize real-world physical systems and make reliable decisions. In simpler terms, I am interested in robotics, machine learning, computational imaging and optics.
+                <strong>Research Interest:</strong> My research interest lies at the intersection of perception 📷, robotics 🤖, and learning 🧠. My aim is to create agents that can interactively and informatively sense the world, and learn from the sensed data to better digitalize real-world physical systems and make reliable decisions. In simpler terms, I am interested in robotics, machine learning, computational imaging and optics.
               </div>
 
               <div class="research-section">
@@ -281,7 +291,6 @@
                 Finalist for the 2026 <a href="https://schmidtsciencefellows.org/">Schmidt Science Fellowship</a>.
             </div>
         </div>
-
 		<div class='row vspace-top-news'>
 
                     <div class="col-sm-2 news-date">
@@ -315,6 +324,16 @@
                         </div>
                     </div>
 
+
+
+		<div class='row vspace-top-news'>
+                    <div class="col-sm-2 news-date">
+                        Dec. 2023
+                    </div>
+                    <div class="col">
+                        MIT news covered our work Neural Litho, <a href="https://news.mit.edu/2023/closing-design-manufacturing-gap-optical-devices-1213">"Close the design to manufacturing gap in optical devices"</a>.
+                      </div>
+                </div>
 
 
 
@@ -376,7 +395,7 @@
               High-performance real-world optical computing trained by in situ model-free optimization</span><br />
               
             <div style="font-size: 14px; color: #bb1f1f;">
-            <b><u> ⭑ Best Paper Award of ICCP'24 </u></b>
+            <b><u> 🎖️ ⭑ Best Paper Award of ICCP'24 </u></b>
             </div>  
             <div class='paper-desc' style="font-size: inherit;">
               <span class="journal-name">ICCP&TPAMI 2024</span> [<a href='https://shuxin626.github.io/mfo_optical_computing/index.html'>Project page</a>]
